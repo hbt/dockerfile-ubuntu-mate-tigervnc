@@ -1,0 +1,21 @@
+version: '3.4'
+
+  
+
+services: 
+  
+  tigervncubuntu:
+    build:  
+      context: . 
+    image: hbtlabs/tigervncubuntu
+    container_name: tigervncubuntu
+    ports:
+      - 5901:5901
+
+    volumes:
+      - .:/vncubuntu
+      - /tmp/vncubuntu:/tmp-vncubuntu
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+
+

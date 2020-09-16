@@ -48,6 +48,8 @@ ADD packages /src/packages
 RUN dpkg -i /src/packages/*.deb
 ADD vnc /etc/xinetd.d/vnc
 
+# custom pkgs
+RUN sudo apt-get install -y xdotool
 
 # Copy the files into the container
 ADD startup.sh /src/startup.sh
