@@ -2,7 +2,12 @@
 
 Usage:
 
-dc up
+- dc up
+- ./scripts/connect.sh
+````
+ USER : admin
+ PASSWD : admin
+````
 
 
 
